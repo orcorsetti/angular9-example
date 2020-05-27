@@ -1,0 +1,15 @@
+.inputAdd {
+    margin-left: 1%;
+    width: 20%;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: mediumblue;
+}
+
+.inputAdd::placeholder {
+    text-align: center;
+}
+
+.inputAdd:focus{
+    border-color: lime;
+}

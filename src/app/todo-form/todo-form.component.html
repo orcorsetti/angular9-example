@@ -1,0 +1,10 @@
+<input 
+    type="text" #description
+    (keyup.enter)="onClickedAdd(description)" 
+    (focus)="focus=true"
+    (blur)="focus=false" 
+    name="description" 
+    class="inputAdd"
+    placeholder="Ingrese la tarea">
+<img src="../../assets/info.png" *ngIf = "focus"> 
+<span *ngIf="focus">Presione enter para añadir</span> 

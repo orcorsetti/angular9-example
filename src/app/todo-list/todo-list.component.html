@@ -1,0 +1,21 @@
+
+<table *ngIf="list.length !== 0" >
+    <th class="uncompleted">Tareas Pendientes</th>
+    <tr *ngFor="let item of list" class="uncompleted">
+        <td *ngIf="item.isCompleted===false">
+            <input type="checkbox" (click)="onCheckedBox(item)" name="checkBox">
+                {{item.description}}
+            <input type="image" src="../../assets/delete.png" alt="Eliminar elemento" name="deleteButton" (click)="onDeleteButtonClicked(item)">
+        </td>
+    </tr>
+    <th class="completed">Tareas Completadas</th>
+    <tr *ngFor="let item of list" class="completed">
+        <td *ngIf="item.isCompleted">
+            <input checked type="checkbox" (click)="onCheckedBox(item)">
+                {{item.description}}
+            <input type="image" src="../../assets/delete.png" alt="Eliminar elemento" (click)="onDeleteButtonClicked(item)">
+        </td>
+    </tr>
+</table>
+
+<p *ngIf="list.length===0" class="emptyList">No hay tareas</p>

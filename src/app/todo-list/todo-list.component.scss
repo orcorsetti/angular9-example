@@ -1,0 +1,45 @@
+.completed {
+    background-color: lightgreen;
+    border: limegreen;
+}
+
+tr.completed {
+    
+    text-decoration: line-through; 
+}
+
+tr.completed:hover {
+    background-color: limegreen
+}
+tr.uncompleted:hover {
+    background-color: tomato;
+}
+.uncompleted {
+    background-color: lightsalmon;
+    border: tomato;
+}
+
+table {
+    margin: 1%;
+    width: 98%;
+}
+
+th {
+    border-bottom: 1px solid white;
+}
+
+td {
+    height: fit-content;
+    padding: 15px;
+    text-align: left;
+}
+
+.emptyList {
+    background-color: grey;
+    color: honeydew;
+    vertical-align: middle;
+    font-weight: bolder;
+    height: 40px;
+    margin: 1%;
+    padding-left: 0.5%;
+}
