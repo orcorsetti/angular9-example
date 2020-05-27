@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "ng-peti"
+  "defaultProject": "ng-peti",
+  "cli": {
+    "analytics": "c76bc45b-c7fb-4ecf-964f-548622b6d1dd"
+  }
 }

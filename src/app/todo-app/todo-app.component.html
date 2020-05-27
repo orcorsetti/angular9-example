@@ -1,4 +1,4 @@
-<app-todo-form (add)="onTodoItemCreated($event)"></app-todo-form>
+<app-todo-form (add)="onTodoItemCreated($event)" [id]="lastItemId"></app-todo-form>
 <app-todo-list
   [list]="list"
   (itemRemoved)="onTodoItemRemoved($event)"
